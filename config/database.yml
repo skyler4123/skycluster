@@ -54,6 +54,12 @@ development:
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
+
+
+
+  ###
+  url: postgres://postgres:password@localhost:5432/skycluster_development
+
 test:
   <<: *default
   database: skycluster_test
@@ -78,6 +84,10 @@ test:
 # Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full overview on how database connection configuration can be specified.
 #
+
+
+  ###
+  url: postgres://postgres:password@localhost:5432/skycluster_test
 production:
   primary: &primary_production
     <<: *default
