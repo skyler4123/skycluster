@@ -54,7 +54,7 @@ export default class ApplicationController extends Controller {
   }
 
   initializeCompletedEvent() {
-    this.element.dispatchEvent(new CustomEvent("controller:initialized", { detail: { controller: this } }))
+    this.element.dispatchEvent(new CustomEvent("controller_initialized", { detail: { controller: this } }))
   }
 
 }
