@@ -64,4 +64,7 @@ group :test do
   gem "selenium-webdriver"
 end
 
+
+###
 gem "authentication-zero"
+gem "aws-sdk"
